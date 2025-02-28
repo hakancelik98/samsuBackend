@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Muhasebe Paneli</title>
+    <link rel="stylesheet" th:href="@{/muhasebeciEkraniCSS.css}" />
+</head>
+<body>
+<div class="container">
+    <h2>Muhasebe Paneli</h2>
+    <div class="panel-content">
+        <h3>Faturalar Listesi</h3>
+        <table class="fatura-tablosu">
+            <thead>
+            <tr>
+                <th>Fatura Numarası</th>
+                <th>Müşteri Adı</th>
+                <th>Tarih</th>
+                <th>Tutar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>F001</td>
+                <td>Hakan Çelik</td>
+                <td>2025-02-28</td>
+                <td>₺500</td>
+            </tr>
+            <tr>
+                <td>F002</td>
+                <td>Test Samsu B.</td>
+                <td>2025-02-25</td>
+                <td>₺300</td>
+            </tr>
+            <tr>
+                <td>F003</td>
+                <td>Ahmet Yılmaz</td>
+                <td>2025-02-20</td>
+                <td>₺150</td>
+            </tr>
+            <tr>
+                <td>F004</td>
+                <td>Zeynep Aydın</td>
+                <td>2025-02-18</td>
+                <td>₺800</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="logout-container">
+        <a href="/logout" class="logout-button">Çıkış Yap</a>
+    </div>
+</div>
+</body>
+</html>

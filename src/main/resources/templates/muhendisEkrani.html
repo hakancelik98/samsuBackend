@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mühendis Paneli</title>
+    <link rel="stylesheet" th:href="@{/muhendisEkraniCSS.css}" />
+</head>
+<body>
+<div class="container">
+    <h2>Mühendis Paneli</h2>
+    <h3>Reçeteler</h3>
+    <table class="tatli-tablosu">
+        <thead>
+        <tr>
+            <th>Adı</th>
+            <th>Malzemeler</th>
+            <th>Yapımı</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Su Böreği</td>
+            <td>Yufka, Beyaz Peynir, Süt, Yumurta, Tereyağı</td>
+            <td>Malzemeleri karıştırın, yufkayı fırında pişirin.</td>
+        </tr>
+        <tr>
+            <td>Baklava</td>
+            <td>Yufka, Ceviz, Tereyağı, Şeker, Su, Limon</td>
+            <td>Yufkaları aralarına ceviz koyarak dizin, tereyağı ve şekerli suyla pişirin.</td>
+        </tr>
+        <tr>
+            <td>Pasta</td>
+            <td>Un, Şeker, Yumurta, Süt, Kakao, Krema</td>
+            <td>Malzemeleri karıştırıp hamur hazırlayın, pişirdikten sonra kremayı ekleyin.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="logout-container">
+    <a href="/logout" class="logout-button">Çıkış Yap</a>
+</div>
+</body>
+</html>

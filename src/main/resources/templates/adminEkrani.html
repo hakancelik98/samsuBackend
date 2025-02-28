@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" th:href="@{/adminEkraniCSS.css}" />
+</head>
+<body>
+<div class="container">
+    <h2>Admin Paneli</h2>
+    <div th:if="${kullaniciRolu == 'ADMIN'}" class="admin-buttons">
+        <div class="button-container">
+            <a href="/muhendisEkrani" class="panel-button">Mühendis Paneli</a>
+        </div>
+        <div class="button-container">
+            <a href="/muhasebeciEkrani" class="panel-button">Muhasebeci Paneli</a>
+        </div>
+    </div>
+    <div class="logout-container">
+        <a href="/logout" class="logout-button">Çıkış Yap</a>
+    </div>
+</div>
+</body>
+</html>

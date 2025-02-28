@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Giriş / Kayıt</title>
+    <link rel="stylesheet" th:href="@{/girisKayitCSS.css}" />
+</head>
+<body>
+
+<div class="container">
+    <h2>Giriş Yap veya Kayıt Ol</h2>
+    <div th:if="${param.error}" class="alert alert-danger">
+        Hatalı giriş, lütfen tekrar deneyin!
+    </div>
+    <div th:if="${param.success}" class="alert alert-success">
+        Kayıt başarılı! Giriş yapabilirsiniz.
+    </div>
+    <div class="form-container">
+        <div class="form-box">
+            <h3>Giriş Yap</h3>
+            <form action="/login" method="post">
+                <input type="hidden" name="islem" value="login"/>
+                <div class="input-group">
+                    <label for="kullaniciAdi">Kullanıcı Adı</label>
+                    <input type="text" id="kullaniciAdi" name="kullaniciAdi" required>
+                </div>
+                <div class="input-group">
+                    <label for="sifre">Şifre</label>
+                    <input type="password" id="sifre" name="sifre" required>
+                </div>
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="form-box">
+            <h3>Kayıt Ol</h3>
+            <form action="/login" method="post">
+                <input type="hidden" name="islem" value="kayit"/>
+                <div class="input-group">
+                    <label for="kullaniciAdiKayit">Kullanıcı Adı</label>
+                    <input type="text" id="kullaniciAdiKayit" name="kullaniciAdi" required>
+                </div>
+                <div class="input-group">
+                    <label for="sifreKayit">Şifre</label>
+                    <input type="password" id="sifreKayit" name="sifre" required>
+                </div>
+                <div class="input-group">
+                    <label for="rolSec">Rol Seç</label>
+                    <select id="rolSec" name="rol" required>
+                        <option value="" disabled selected>Rol Seç</option>
+                        <option th:each="role : ${roles}" th:value="${role.name()}" th:text="${role}">Role</option>
+                    </select>
+                </div>
+                <button type="submit">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
