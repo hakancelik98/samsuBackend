@@ -1,6 +1,6 @@
-package com.example.backandSamsu.Service;
-import com.example.backandSamsu.Model.KullaniciModel;
-import com.example.backandSamsu.Repository.KullaniciRepository;
+package com.example.backendSamsu.Service;
+import com.example.backendSamsu.Model.KullaniciModel;
+import com.example.backendSamsu.Repository.KullaniciRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

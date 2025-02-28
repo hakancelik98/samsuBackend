@@ -1,4 +1,4 @@
-package com.example.backandSamsu.Model;
+package com.example.backendSamsu.Model;
 
 public enum KullaniciRoluEnum {
 

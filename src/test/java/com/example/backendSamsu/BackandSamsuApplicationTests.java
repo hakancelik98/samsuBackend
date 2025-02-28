@@ -1,4 +1,4 @@
-package com.example.backandSamsu;
+package com.example.backendSamsu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
